@@ -64,3 +64,19 @@ In this assignment, [ComVE](https://competitions.codalab.org/competitions/21080)
   
   This subtask was approached as a Text Matching problem where the input is the two statements and the output is a label indicating which is the nonsensical one.
 Pre-trained Language Model [RoBERTa](https://huggingface.co/docs/transformers/model_doc/roberta), a model that uses **BERT**'s architecture was fine-tuned with [Transformers](https://huggingface.co/docs/transformers/index) library of Huggingface.
+
+- **SubTask B**
+  Given two similar statements that differ by only a few words, select the statement of the two that does not make sense.<br> For example, within the statements below, *Statement 2* is the nonsensical statement:<br>
+     -- *Statement 1*: He put a turkey into the fridge.    
+     -- *Statement 2*: He put an elephant into the fridge. <br>
+  
+  This subtask was approached as a Text Matching problem where the input is the two statements and the output is a label indicating which is the nonsensical one.
+Pre-trained Language Model [RoBERTa](https://huggingface.co/docs/transformers/model_doc/roberta), a model that uses **BERT**'s architecture was fine-tuned with [Transformers](https://huggingface.co/docs/transformers/index) library of Huggingface.
+
+- **SubTask C**
+  Given two similar statements that differ by only a few words, select the statement of the two that does not make sense.<br> For example, within the statements below, *Statement 2* is the nonsensical statement:<br>
+     -- *Statement 1*: He put a turkey into the fridge.    
+     -- *Statement 2*: He put an elephant into the fridge. <br>
+  
+  This subtask was approached as a Text Matching problem where the input is the two statements and the output is a label indicating which is the nonsensical one.
+Pre-trained Language Model [RoBERTa](https://huggingface.co/docs/transformers/model_doc/roberta), a model that uses **BERT**'s architecture was fine-tuned with [Transformers](https://huggingface.co/docs/transformers/index) library of Huggingface.
