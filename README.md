@@ -62,5 +62,5 @@ In this assignment, [ComVE](https://competitions.codalab.org/competitions/21080)
      -- *Statement 1*: He put a turkey into the fridge.    
      -- *Statement 2*: He put an elephant into the fridge. <br>
   
-  This subtask was approached as a Text Matching problem where the input is the two statements and the output is a label indicating which is the nonsensical one. <br>
+This subtask was approached as a Text Matching problem where the input is the two statements and the output is a label indicating which is the nonsensical one.
 Pre-trained Language Model [RoBERTa](https://huggingface.co/docs/transformers/model_doc/roberta), a model that uses **BERT**'s architecture was fine-tuned with [Transformers](https://huggingface.co/docs/transformers/index) library of Huggingface.
