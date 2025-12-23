@@ -22,6 +22,12 @@ In this assignment, [Semantic Textual Similarity](https://alt.qcri.org/semeval20
 
 [gensim](https://radimrehurek.com/gensim/), a **Python** library that provides functionality to obtain text representations based on word embeddings (GloVe) has been used to obtain the numerical text representations<br>
 
+> Text Classification<br>
+
+In this assignment, [OffensEval](https://sites.google.com/site/offensevalsharedtask/) shared task, a part of the 2019 and 2020 editions of SemEval has been worked upon. Offensive language identification (Offensive/ non-offensive) and Automatic categorization of offense types(targeted or not) has been classified
+
+[scikit-learn](https://scikit-learn.org/stable/), a **Python** Machine Learning library is leveraged<br>
+
 > Sequence Processing<br>
 
 This part includes text extraction, text cleaning, Tokenization and structuring the dataset.<br>
