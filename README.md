@@ -6,5 +6,6 @@ This repository contains the assignments successfully completed as a part of cou
 - Pre Trained Language Model<br>
 
 > Text Preprocessing<br><br>
+
 This part includes text extraction, text cleaning, Tokenization and structuring the dataset.<br>
 Libraries such as spacy, beautifulsoup, re & pandas are leveraged.
