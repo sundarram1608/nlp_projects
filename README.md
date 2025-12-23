@@ -29,6 +29,7 @@ In this assignment, [OffensEval](https://sites.google.com/site/offensevalsharedt
 [scikit-learn](https://scikit-learn.org/stable/), a **Python** Machine Learning library is leveraged<br>
 
 > Sequence Processing<br>
+
 In this assignment, [MeasEval](https://competitions.codalab.org/competitions/25770) shared task that was part of SemEval-2021 to extract counts, measurements, and related context from scientific documents has been worked upon. This complex task involved solving a number of steps that range from identifying quantities and units of measurement to identify relationships between them. <br>
 
 This assignment contains two parts:<br>
