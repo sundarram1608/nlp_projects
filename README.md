@@ -24,14 +24,26 @@ In this assignment, [Semantic Textual Similarity](https://alt.qcri.org/semeval20
 
 > Text Classification<br>
 
-In this assignment, [OffensEval](https://sites.google.com/site/offensevalsharedtask/) shared task, a part of the 2019 and 2020 editions of SemEval has been worked upon. Offensive language identification (Offensive/ non-offensive) and Automatic categorization of offense types(targeted or not) has been classified
+In this assignment, [OffensEval](https://sites.google.com/site/offensevalsharedtask/) shared task, a part of the 2019 and 2020 editions of SemEval for Offensive language identification (Offensive/ non-offensive) and Automatic categorization of offense types(targeted or not) are worked upon.
 
 [scikit-learn](https://scikit-learn.org/stable/), a **Python** Machine Learning library is leveraged<br>
 
 > Sequence Processing<br>
+In this assignment, [MeasEval](https://competitions.codalab.org/competitions/25770) shared task that was part of SemEval-2021 to extract counts, measurements, and related context from scientific documents has been worked upon. This complex task involved solving a number of steps that range from identifying quantities and units of measurement to identify relationships between them. <br>
 
-This part includes text extraction, text cleaning, Tokenization and structuring the dataset.<br>
-Libraries such as spacy, beautifulsoup, re & pandas are leveraged.<br>
+This assignment contains two parts:<br>
+- Sequence Labelling <br>
+  In this part, the focus was *Quantity* recognition (eg. *12 kg*) step that was approached as a Sequence Labelling task. <br> Recurrent Neural Network with [keras](https://keras.io/), a high-level Deep Learning API written in **Python** that provides a user-friendly interface for the [TensorFlow](https://www.tensorflow.org/) library, one of the most popular low-level Deep Learning frameworks is leveraged. <br>
+  
+- Relation Extraction
+  In this part, the focus was to extract the *HasQuantity* relation. Given a sentence and the entities it contains, identify the *HasQuantity* relations that link *Quantity* entities with entities of other types. The task was approached as a Pairwise Relation Extraction. <br>
+For example, the sentence in the image below contains 1 *Quantity* entity and 2 entities of other types, but only one of the latter is linked to the *Quantity* through the *HasQuantity* relation.
+
+![image](img/hasquantity.png)
+
+Convolutional Neural Network with [keras](https://keras.io/) is leveraged.
+
+  
 
 > Pre Trained Language Model<br>
 
