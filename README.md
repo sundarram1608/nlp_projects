@@ -10,6 +10,7 @@ This repository contains the assignments successfully completed as a part of cou
 This assignment includes text extraction, text cleaning, Tokenization and structuring the dataset.<br>
 Libraries such as spacy, beautifulsoup, re & pandas are leveraged.<br>
 
+---
 
 > Text Similarity<br>
 
