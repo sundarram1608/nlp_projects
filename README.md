@@ -8,4 +8,10 @@ This repository contains the assignments successfully completed as a part of cou
 > Text Preprocessing<br>
 
 This part includes text extraction, text cleaning, Tokenization and structuring the dataset.<br>
+Libraries such as spacy, beautifulsoup, re & pandas are leveraged.<br>
+
+> Text Preprocessing<br>
+
+This part includes text extraction, text cleaning, Tokenization and structuring the dataset.<br>
 Libraries such as spacy, beautifulsoup, re & pandas are leveraged.
+
