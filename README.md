@@ -4,12 +4,12 @@ This repository contains the assignments successfully completed as a part of cou
 - Text Classification<br>
 - Sequence Processing<br>
 - Pre Trained Language Model<br>
+---
 
 > Text Preprocessing<br>
 
 This assignment includes text extraction, text cleaning, Tokenization and structuring the dataset.<br>
 Libraries such as spacy, beautifulsoup, re & pandas are leveraged.<br>
-
 ---
 
 > Text Similarity<br>
@@ -23,12 +23,14 @@ In this assignment, [Semantic Textual Similarity](https://alt.qcri.org/semeval20
 | The black dog is running through the snow.              | A race car driver is driving his car through the mud. |   0   |
 
 [gensim](https://radimrehurek.com/gensim/), a **Python** library that provides functionality to obtain text representations based on word embeddings (GloVe) has been used to obtain the numerical text representations<br>
+---
 
 > Text Classification<br>
 
 In this assignment, [OffensEval](https://sites.google.com/site/offensevalsharedtask/) shared task, a part of the 2019 and 2020 editions of SemEval for Offensive language identification (Offensive/ non-offensive) and Automatic categorization of offense types(targeted or not) are worked upon.
 
 [scikit-learn](https://scikit-learn.org/stable/), a **Python** Machine Learning library is leveraged<br>
+---
 
 > Sequence Processing<br>
 
@@ -45,8 +47,7 @@ For example, the sentence in the image below contains 1 *Quantity* entity and 2 
 ![image](sequence-processing/img/hasquantity.png)
 
 Convolutional Neural Network with [keras](https://keras.io/) is leveraged.
-
-  
+---
 
 > Pre Trained Language Model<br>
 
