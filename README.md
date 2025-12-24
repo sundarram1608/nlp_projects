@@ -47,9 +47,9 @@ This assignment contains two parts:<br>
   In this part, the focus was to extract the *HasQuantity* relation. Given a sentence and the entities it contains, identify the *HasQuantity* relations that link *Quantity* entities with entities of other types. The task was approached as a Pairwise Relation Extraction. <br>
 For example, the sentence in the image below contains 1 *Quantity* entity and 2 entities of other types, but only one of the latter is linked to the *Quantity* through the *HasQuantity* relation.
 
-![image](sequence-processing/img/hasquantity.png)
+  ![image](sequence-processing/img/hasquantity.png)
 
-Convolutional Neural Network with [keras](https://keras.io/) is leveraged.
+  Convolutional Neural Network with [keras](https://keras.io/) is leveraged.
 
 ---
 
