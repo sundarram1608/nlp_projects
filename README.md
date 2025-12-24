@@ -4,6 +4,9 @@ This repository contains the assignments successfully completed as a part of cou
 - Text Classification<br>
 - Sequence Processing<br>
 - Pre Trained Language Model<br>
+
+Each of these assignments include seperate README.md that helps with the installation & use of the repositories.  
+
 ---
 
 > ### Text Preprocessing<br>
@@ -57,14 +60,14 @@ For example, the sentence in the image below contains 1 *Quantity* entity and 2 
 
 In this assignment, [ComVE](https://competitions.codalab.org/competitions/21080) shared task that was part of SemEval-2020 to evaluate whether a system can distinguish if a natural language statement makes sense to humans or not and provide a reason has been worked up on. **ComVE** includes three subtasks that require models to acquire and apply commonsense knowledge.
 
-- **SubTask A**
+- **SubTask A**<br>
   Given two similar statements that differ by only a few words, select the statement of the two that does not make sense.<br> For example, within the statements below, *Statement 2* is the nonsensical statement:<br>
      -- *Statement 1*: He put a turkey into the fridge.    
      -- *Statement 2*: He put an elephant into the fridge. <br>
   
   This subtask was approached as a Text Matching problem where the input is the two statements and the output is a label indicating which is the nonsensical one.
 
-- **SubTask B**
+- **SubTask B**<br>
   Given a statement that does not make sense and three possible reasons, select which reason explains why the given statement is against common sense. For example, for the following nonsensical statement the correct answer is *Reason A*:<br>
     -- *Statement*: He put an elephant into the fridge.
     -- *Reason A*: An elephant is much bigger than a fridge.  
@@ -73,11 +76,14 @@ In this assignment, [ComVE](https://competitions.codalab.org/competitions/21080)
        
   This subtask was approached as a Multiple Choice problem where the input is the nonsensical statement and the three possible explanations, and the output is a label indicating which of the reasons is the correct one.
 
-- **SubTask C**
-  Given two similar statements that differ by only a few words, select the statement of the two that does not make sense.<br> For example, within the statements below, *Statement 2* is the nonsensical statement:<br>
-     -- *Statement 1*: He put a turkey into the fridge.    
-     -- *Statement 2*: He put an elephant into the fridge. <br>
-  
+- **SubTask C**<br>
+  Given a statement that does not make sense, generate the reason why this statement does not make sense. For each nonsensical statement, three valid reasons are given as reference:<br>
+    -- *Statement*: He put an elephant into the fridge.  
+    -- *Reason A*: An elephant is much bigger than a fridge.  
+    -- *Reason B*: A fridge is much smaller than an elephant.  
+    -- *Reason C*: Most of the fridges aren't large enough to contain an elephant.<br>
+
+  This subtask was approached as a Sequence-to-Sequence problem where the input is the nonsensical statement and the output is a valid reason.
 
 For all these subtasks, Pre-trained Language Model [RoBERTa](https://huggingface.co/docs/transformers/model_doc/roberta), a model that uses **BERT**'s architecture was fine-tuned with [Transformers](https://huggingface.co/docs/transformers/index) library of Huggingface.<br>
 
