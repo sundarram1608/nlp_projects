@@ -7,8 +7,6 @@ The learning objectives of this assignment are to:
 
 # Setup your environment
 
-First, carefully follow the *General Instructions for Programming Assignments*.
-
 To install the libraries required for this assignment run:
 
     pip install -r requirements.txt
@@ -16,16 +14,3 @@ To install the libraries required for this assignment run:
 To download the **spaCy** English pipeline run:
 
     python -m spacy download en_core_web_sm
-
-    
-# Grading
-
-The grading distribution for this assignment is listed below:
-- test_extract_text = 20%
-- test_clean_text = 20%
-- test_process_text = 20%
-- test_to_dataframe = 20%
-
-- test_customize_tokenizer = 20%
-
-***classroom.yml has been removed from workflows***
