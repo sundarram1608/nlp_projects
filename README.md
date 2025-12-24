@@ -55,7 +55,7 @@ Convolutional Neural Network with [keras](https://keras.io/) is leveraged.
 
 > ### Pre Trained Language Model<br>
 
-In this assignment, [ComVE](https://competitions.codalab.org/competitions/21080) shared task that was part of SemEval-2020 to evaluate whether a system can distinguish if a natural language statement makes sense to humans or not and provide a reason has been worked up on. **ComVE** includes three subtasks that require models to acquire and apply commonsense knowledge. 
+In this assignment, [ComVE](https://competitions.codalab.org/competitions/21080) shared task that was part of SemEval-2020 to evaluate whether a system can distinguish if a natural language statement makes sense to humans or not and provide a reason has been worked up on. **ComVE** includes three subtasks that require models to acquire and apply commonsense knowledge.
 
 - **SubTask A**
   Given two similar statements that differ by only a few words, select the statement of the two that does not make sense.<br> For example, within the statements below, *Statement 2* is the nonsensical statement:<br>
@@ -63,20 +63,21 @@ In this assignment, [ComVE](https://competitions.codalab.org/competitions/21080)
      -- *Statement 2*: He put an elephant into the fridge. <br>
   
   This subtask was approached as a Text Matching problem where the input is the two statements and the output is a label indicating which is the nonsensical one.
-Pre-trained Language Model [RoBERTa](https://huggingface.co/docs/transformers/model_doc/roberta), a model that uses **BERT**'s architecture was fine-tuned with [Transformers](https://huggingface.co/docs/transformers/index) library of Huggingface.
 
 - **SubTask B**
-  Given two similar statements that differ by only a few words, select the statement of the two that does not make sense.<br> For example, within the statements below, *Statement 2* is the nonsensical statement:<br>
-     -- *Statement 1*: He put a turkey into the fridge.    
-     -- *Statement 2*: He put an elephant into the fridge. <br>
-  
-  This subtask was approached as a Text Matching problem where the input is the two statements and the output is a label indicating which is the nonsensical one.
-Pre-trained Language Model [RoBERTa](https://huggingface.co/docs/transformers/model_doc/roberta), a model that uses **BERT**'s architecture was fine-tuned with [Transformers](https://huggingface.co/docs/transformers/index) library of Huggingface.
+  Given a statement that does not make sense and three possible reasons, select which reason explains why the given statement is against common sense. For example, for the following nonsensical statement the correct answer is *Reason A*:<br>
+    -- *Statement*: He put an elephant into the fridge.
+    -- *Reason A*: An elephant is much bigger than a fridge.  
+    -- *Reason B*: Elephants are usually white while fridges are usually white.  
+    -- *Reason C*: An elephant cannot eat a fridge.<br>
+       
+  This subtask was approached as a Multiple Choice problem where the input is the nonsensical statement and the three possible explanations, and the output is a label indicating which of the reasons is the correct one.
 
 - **SubTask C**
   Given two similar statements that differ by only a few words, select the statement of the two that does not make sense.<br> For example, within the statements below, *Statement 2* is the nonsensical statement:<br>
      -- *Statement 1*: He put a turkey into the fridge.    
      -- *Statement 2*: He put an elephant into the fridge. <br>
   
-  This subtask was approached as a Text Matching problem where the input is the two statements and the output is a label indicating which is the nonsensical one.
-Pre-trained Language Model [RoBERTa](https://huggingface.co/docs/transformers/model_doc/roberta), a model that uses **BERT**'s architecture was fine-tuned with [Transformers](https://huggingface.co/docs/transformers/index) library of Huggingface.
+
+For all these subtasks, Pre-trained Language Model [RoBERTa](https://huggingface.co/docs/transformers/model_doc/roberta), a model that uses **BERT**'s architecture was fine-tuned with [Transformers](https://huggingface.co/docs/transformers/index) library of Huggingface.<br>
+
